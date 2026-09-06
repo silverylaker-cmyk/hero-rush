@@ -296,12 +296,12 @@
           {
             "enemyId": "grunt",
             "count": 5,
-            "levelScale": 1.933
+            "levelScale": 1.75
           },
           {
             "enemyId": "slinger",
             "count": 3,
-            "levelScale": 1.933
+            "levelScale": 1.75
           }
         ]
       },
@@ -310,12 +310,12 @@
           {
             "enemyId": "shaman",
             "count": 2,
-            "levelScale": 1.933
+            "levelScale": 1.75
           },
           {
             "enemyId": "grunt",
             "count": 3,
-            "levelScale": 1.933
+            "levelScale": 1.75
           }
         ]
       },
@@ -324,17 +324,17 @@
           {
             "enemyId": "brute",
             "count": 1,
-            "levelScale": 1.933
+            "levelScale": 1.75
           },
           {
             "enemyId": "shaman",
             "count": 1,
-            "levelScale": 1.933
+            "levelScale": 1.75
           },
           {
             "enemyId": "grunt",
             "count": 3,
-            "levelScale": 1.933
+            "levelScale": 1.75
           }
         ]
       }
@@ -350,12 +350,12 @@
           {
             "enemyId": "grunt",
             "count": 5,
-            "levelScale": 2.067
+            "levelScale": 1.55
           },
           {
             "enemyId": "slinger",
             "count": 3,
-            "levelScale": 2.067
+            "levelScale": 1.55
           }
         ]
       },
@@ -364,12 +364,12 @@
           {
             "enemyId": "shaman",
             "count": 2,
-            "levelScale": 2.067
+            "levelScale": 1.55
           },
           {
             "enemyId": "grunt",
             "count": 4,
-            "levelScale": 2.067
+            "levelScale": 1.55
           }
         ]
       },
@@ -378,12 +378,12 @@
           {
             "enemyId": "brute",
             "count": 2,
-            "levelScale": 2.067
+            "levelScale": 1.55
           },
           {
             "enemyId": "grunt",
             "count": 1,
-            "levelScale": 2.067
+            "levelScale": 1.55
           }
         ]
       }
@@ -399,12 +399,12 @@
           {
             "enemyId": "grunt",
             "count": 5,
-            "levelScale": 2.2
+            "levelScale": 1.55
           },
           {
             "enemyId": "slinger",
             "count": 3,
-            "levelScale": 2.2
+            "levelScale": 1.55
           }
         ]
       },
@@ -413,17 +413,17 @@
           {
             "enemyId": "shaman",
             "count": 2,
-            "levelScale": 2.2
+            "levelScale": 1.55
           },
           {
             "enemyId": "grunt",
             "count": 4,
-            "levelScale": 2.2
+            "levelScale": 1.55
           },
           {
             "enemyId": "slinger",
             "count": 2,
-            "levelScale": 2.2
+            "levelScale": 1.55
           }
         ]
       },
@@ -432,12 +432,12 @@
           {
             "enemyId": "brute",
             "count": 2,
-            "levelScale": 2.2
+            "levelScale": 1.55
           },
           {
             "enemyId": "shaman",
             "count": 1,
-            "levelScale": 2.2
+            "levelScale": 1.55
           }
         ]
       }
