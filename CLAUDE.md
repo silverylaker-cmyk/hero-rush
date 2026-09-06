@@ -287,7 +287,7 @@ plain solid #00FF00 background, no text, no watermark, no frame
 
 ---
 ## 진행 상황
-- [x] M0  - [x] M1  - [ ] M2  - [ ] M3  - [ ] M4  - [ ] M5
+- [x] M0  - [x] M1  - [x] M2  - [x] M3  - [ ] M4  - [ ] M5
 
 ### M0 — 2026-09-06
 - 독립 Phaser 3 + TypeScript + Vite 프로젝트, PWA, FIT 가로 화면, gh-pages 배포 워크플로.
@@ -298,3 +298,9 @@ plain solid #00FF00 background, no text, no watermark, no frame
 - 순수 TypeScript 60Hz 시뮬, 6영웅/4적/10스테이지 JSON, 5종 조준, 상태이상, 인터럽트, 투사체, 웨이브와 입력 타임라인.
 - 24개 전투 테스트, 결정성·입력 재생·렌더 배치 크기 불변, typecheck/lint/build PASS.
 - sim --stage 5 --seed 1 실행 확인. 초기 밸런스 게이트 PASS, 후반 수동 정책 난이도는 M3에서 정교화.
+
+### M2–M3 — 2026-09-06
+- Phaser 전투 화면, 5종 조준 지원, ¼ 배속, 파티 편성, 10스테이지 선택/잠금, 결과/별점, 저장, 배속/일시정지/포기.
+- 전투·진행 테스트 27개 PASS. Chrome 실제 입력 E2E 4개 PASS: 클리어/저장/잠금, 조준/취소/슬로모/일시정지, 적 시전 인터럽트, 모바일 FIT/회전 안내.
+- 전투 회복 중 근접 접촉 거리 이동으로 넉백 후 2열 근접 정지 문제 해결. 기존 Godot와 무관한 새 TS 코어 변경.
+- 밸런스 필수 게이트 PASS (20시드): 1–3 오토100%, 8–10 오토0%. 9–10 수동 정책 난이도 추가 확인 중.

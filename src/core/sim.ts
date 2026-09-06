@@ -25,7 +25,7 @@ export class BattleSim {
     this.units=party.map((id,slot) => {
       const h=getHero(id), rowIndex=rowCounts[h.row]++;
       const x=600-({front:0,mid:140,back:280}[h.row]);
-      const offsets=h.row==='front' ? [-30,60] : h.row==='mid' ? [40] : [-60,20,100];
+      const offsets=h.row==='front' ? [-30,60] : h.row==='mid' ? [40] : [-60,0,60];
       return this.makeUnit(id,h.name,'ally',slot,h.role,x,GROUND_Y+(offsets[rowIndex]??0),h.stats,h.skillId,h.targetPolicy);
     });
     this.spawnWave();
@@ -166,6 +166,15 @@ export class BattleSim {
           if(u.stats.range>200) this.projectiles.push({id:++this.projectileSeq,sourceId:u.id,targetId:target.id,x:u.x,y:u.y-90,power,damageType:kind,speed:900});
           else this.damage(u,target,power,kind,true);
         }
+        // Melee fighters use the recovery interval to close to body contact.
+        // Stopping the leader at maximum attack range strands a second fighter
+        // behind the 60px queue after every knockback, despite an open front.
+        if(u.stats.range<=160&&u.cooldown>.4&&this.tick-u.actionTick>19) {
+          const current=positions.get(u.id)!,dir=u.team==='ally'?1:-1;
+          let distance=Math.min(u.stats.moveSpeed*DT,Math.max(0,(Math.abs(target.x-current)-60)/2));
+          for(const other of this.units)if(other.hp>0&&other.team===u.team&&other.id!==u.id){const ahead=(positions.get(other.id)!-current)*dir;if(ahead>0)distance=Math.min(distance,Math.max(0,ahead-60));}
+          if(distance>0)moves.set(u.id,current+distance*dir);
+        }
       } else {
         const dir=u.team==='ally'?1:-1, current=positions.get(u.id)!;
         let next=current+dir*Math.min(u.stats.moveSpeed*DT,Math.max(0,Math.abs(target.x-current)-u.stats.range));
@@ -236,7 +245,7 @@ export class BattleSim {
         if(skill.heal&&!sim.living('ally').some(v=>v.hp/v.stats.hp<0.65)) continue;
         const control=skill.effects.some(e=>['stun','silence','airborne','knockback'].includes(e.kind));
         if(control&&!sim.enemies.some(v=>v.casting)&&sim.enemies.some(v=>v.hp>0&&v.skillId)) continue;
-        const aim=sim.defaultAim(u,true);if(aim) sim.enqueue({type:'cast',tick:sim.tick+1,unitId:u.id,aim});
+        const aim=sim.defaultAim(u,true);if(aim) {sim.enqueue({type:'cast',tick:sim.tick+1,unitId:u.id,aim});break;}
       }
       sim.step();
     }
