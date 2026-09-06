@@ -318,5 +318,5 @@ plain solid #00FF00 background, no text, no watermark, no frame
 ### M5 구현·자동 검증 — 사용자 플레이 검수 대기
 - 모바일 터치 방향 조준 PASS. 20유닛·CPU 6배 제한 Chrome 평균 45.2fps (30fps 게이트 PASS). 실제 갤럭시 60fps 검증은 수행하지 않았다.
 - 포커스 이탈/터치 취소 시 조준 해제·일시정지. 빌드별 서비스워커 버전과 JS/CSS/아틀라스 프리캐시 구현.
-- 공개 배포본의 오프라인 재실행 검증 진행 중.
+- 공개 배포본의 빌드 지문 일치, 서비스워커 설치, 오프라인 새로고침 후 1스테이지 클리어 PASS. `tests/deployment-report.json` 참조.
 - 사용자 직접 플레이 OK가 M5 완료 조건이므로 체크박스는 대기로 유지한다.
