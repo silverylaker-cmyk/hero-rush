@@ -287,9 +287,14 @@ plain solid #00FF00 background, no text, no watermark, no frame
 
 ---
 ## 진행 상황
-- [x] M0  - [ ] M1  - [ ] M2  - [ ] M3  - [ ] M4  - [ ] M5
+- [x] M0  - [x] M1  - [ ] M2  - [ ] M3  - [ ] M4  - [ ] M5
 
 ### M0 — 2026-09-06
 - 독립 Phaser 3 + TypeScript + Vite 프로젝트, PWA, FIT 가로 화면, gh-pages 배포 워크플로.
 - typecheck / test (스캐폴드, 테스트 0건) / build PASS.
 - 기존 Godot 프로젝트는 읽기만 하며 수정하지 않는다.
+
+### M1 — 2026-09-06
+- 순수 TypeScript 60Hz 시뮬, 6영웅/4적/10스테이지 JSON, 5종 조준, 상태이상, 인터럽트, 투사체, 웨이브와 입력 타임라인.
+- 24개 전투 테스트, 결정성·입력 재생·렌더 배치 크기 불변, typecheck/lint/build PASS.
+- sim --stage 5 --seed 1 실행 확인. 초기 밸런스 게이트 PASS, 후반 수동 정책 난이도는 M3에서 정교화.

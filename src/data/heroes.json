@@ -1,0 +1,164 @@
+[
+  {
+    "id": "ironwall",
+    "name": "브람",
+    "title": "강철 방패",
+    "role": "tank",
+    "row": "front",
+    "stats": {
+      "hp": 2400,
+      "atk": 110,
+      "mres": 120,
+      "atkSpeed": 0.8,
+      "range": 120,
+      "moveSpeed": 180,
+      "energyOnHit": 12,
+      "energyOnDamaged": 8,
+      "def": 180
+    },
+    "skillId": "quake_slam",
+    "art": {
+      "key": "ironwall",
+      "portrait": "ironwall",
+      "scale": 1,
+      "anchorY": 1
+    },
+    "color": "#8bbce0",
+    "targetPolicy": "nearest"
+  },
+  {
+    "id": "lancer",
+    "name": "세라",
+    "title": "창기병",
+    "role": "melee",
+    "row": "front",
+    "stats": {
+      "hp": 1600,
+      "atk": 190,
+      "mres": 80,
+      "atkSpeed": 1.1,
+      "range": 140,
+      "moveSpeed": 180,
+      "energyOnHit": 12,
+      "energyOnDamaged": 8,
+      "def": 120
+    },
+    "skillId": "charge_lance",
+    "art": {
+      "key": "lancer",
+      "portrait": "lancer",
+      "scale": 1,
+      "anchorY": 1
+    },
+    "color": "#64c7dd",
+    "targetPolicy": "nearest"
+  },
+  {
+    "id": "shade",
+    "name": "카이",
+    "title": "그림자 검",
+    "role": "melee",
+    "row": "mid",
+    "stats": {
+      "hp": 1300,
+      "atk": 240,
+      "mres": 70,
+      "atkSpeed": 1.2,
+      "range": 120,
+      "moveSpeed": 180,
+      "energyOnHit": 12,
+      "energyOnDamaged": 8,
+      "def": 90
+    },
+    "skillId": "phantom_strike",
+    "art": {
+      "key": "shade",
+      "portrait": "shade",
+      "scale": 1,
+      "anchorY": 1
+    },
+    "color": "#b6a0ec",
+    "targetPolicy": "backline"
+  },
+  {
+    "id": "ember",
+    "name": "리안",
+    "title": "화염술사",
+    "role": "mage",
+    "row": "back",
+    "stats": {
+      "hp": 1000,
+      "atk": 230,
+      "mres": 140,
+      "atkSpeed": 0.85,
+      "range": 520,
+      "moveSpeed": 180,
+      "energyOnHit": 12,
+      "energyOnDamaged": 8,
+      "def": 60
+    },
+    "skillId": "flame_storm",
+    "art": {
+      "key": "ember",
+      "portrait": "ember",
+      "scale": 1,
+      "anchorY": 1
+    },
+    "color": "#f19c70",
+    "targetPolicy": "nearest"
+  },
+  {
+    "id": "hawkeye",
+    "name": "노아",
+    "title": "사냥꾼",
+    "role": "ranged",
+    "row": "back",
+    "stats": {
+      "hp": 1100,
+      "atk": 210,
+      "mres": 80,
+      "atkSpeed": 1.1,
+      "range": 560,
+      "moveSpeed": 180,
+      "energyOnHit": 12,
+      "energyOnDamaged": 8,
+      "def": 70
+    },
+    "skillId": "piercing_shot",
+    "art": {
+      "key": "hawkeye",
+      "portrait": "hawkeye",
+      "scale": 1,
+      "anchorY": 1
+    },
+    "color": "#a7cd82",
+    "targetPolicy": "nearest"
+  },
+  {
+    "id": "lumen",
+    "name": "미엘",
+    "title": "성가수",
+    "role": "healer",
+    "row": "back",
+    "stats": {
+      "hp": 1200,
+      "atk": 120,
+      "mres": 150,
+      "atkSpeed": 0.9,
+      "range": 480,
+      "moveSpeed": 180,
+      "energyOnHit": 12,
+      "energyOnDamaged": 8,
+      "def": 80
+    },
+    "skillId": "sanctuary",
+    "art": {
+      "key": "lumen",
+      "portrait": "lumen",
+      "scale": 1,
+      "anchorY": 1
+    },
+    "color": "#ebd397",
+    "targetPolicy": "nearest"
+  }
+]

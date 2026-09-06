@@ -1,0 +1,106 @@
+[
+  {
+    "id": "grunt",
+    "name": "고블린 병사",
+    "role": "melee",
+    "stats": {
+      "hp": 600,
+      "atk": 90,
+      "mres": 30,
+      "atkSpeed": 0.85,
+      "range": 120,
+      "moveSpeed": 180,
+      "energyOnHit": 12,
+      "energyOnDamaged": 8,
+      "def": 40
+    },
+    "castSkillId": null,
+    "castDuration": 0,
+    "castCooldown": 10,
+    "art": {
+      "key": "grunt",
+      "portrait": "grunt",
+      "scale": 1,
+      "anchorY": 1
+    },
+    "color": "#aac18f"
+  },
+  {
+    "id": "slinger",
+    "name": "고블린 투석병",
+    "role": "ranged",
+    "stats": {
+      "hp": 450,
+      "atk": 110,
+      "mres": 20,
+      "atkSpeed": 0.8,
+      "range": 480,
+      "moveSpeed": 180,
+      "energyOnHit": 12,
+      "energyOnDamaged": 8,
+      "def": 20
+    },
+    "castSkillId": null,
+    "castDuration": 0,
+    "castCooldown": 10,
+    "art": {
+      "key": "slinger",
+      "portrait": "slinger",
+      "scale": 1,
+      "anchorY": 1
+    },
+    "color": "#aac18f"
+  },
+  {
+    "id": "shaman",
+    "name": "늪 주술사",
+    "role": "caster",
+    "stats": {
+      "hp": 700,
+      "atk": 80,
+      "mres": 90,
+      "atkSpeed": 0.75,
+      "range": 500,
+      "moveSpeed": 180,
+      "energyOnHit": 12,
+      "energyOnDamaged": 8,
+      "def": 40
+    },
+    "castSkillId": "swamp_hex",
+    "castDuration": 2.5,
+    "castCooldown": 10,
+    "art": {
+      "key": "shaman",
+      "portrait": "shaman",
+      "scale": 1,
+      "anchorY": 1
+    },
+    "color": "#aac18f"
+  },
+  {
+    "id": "brute",
+    "name": "오우거",
+    "role": "boss",
+    "stats": {
+      "hp": 4500,
+      "atk": 220,
+      "mres": 60,
+      "atkSpeed": 0.65,
+      "range": 160,
+      "moveSpeed": 180,
+      "energyOnHit": 12,
+      "energyOnDamaged": 8,
+      "def": 120
+    },
+    "castSkillId": "brutal_sweep",
+    "castDuration": 3,
+    "castCooldown": 10,
+    "art": {
+      "key": "brute",
+      "portrait": "brute",
+      "scale": 1,
+      "anchorY": 1
+    },
+    "color": "#d78975"
+  }
+]

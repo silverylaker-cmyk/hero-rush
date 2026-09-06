@@ -1,0 +1,161 @@
+[
+  {
+    "id": "quake_slam",
+    "name": "대지 강타",
+    "description": "범위를 조준해 적을 1.5초 기절시킵니다.",
+    "aimType": "ground_point",
+    "damage": 320,
+    "damageType": "physical",
+    "range": 1000,
+    "color": "#e6c57f",
+    "effects": [
+      {
+        "kind": "stun",
+        "duration": 1.5,
+        "magnitude": 0
+      }
+    ],
+    "radius": 220
+  },
+  {
+    "id": "charge_lance",
+    "name": "돌격의 창",
+    "description": "방향을 조준해 적을 밀쳐 시전을 끊습니다.",
+    "aimType": "direction",
+    "damage": 380,
+    "damageType": "physical",
+    "range": 1300,
+    "color": "#81d7ed",
+    "effects": [
+      {
+        "kind": "knockback",
+        "duration": 0.3,
+        "magnitude": 200
+      }
+    ],
+    "width": 160
+  },
+  {
+    "id": "phantom_strike",
+    "name": "그림자 습격",
+    "description": "적 하나를 띄워 강한 피해를 줍니다.",
+    "aimType": "target_enemy",
+    "damage": 620,
+    "damageType": "physical",
+    "range": 1500,
+    "color": "#c3a1ff",
+    "effects": [
+      {
+        "kind": "airborne",
+        "duration": 0.8,
+        "magnitude": 0
+      }
+    ]
+  },
+  {
+    "id": "flame_storm",
+    "name": "화염 폭풍",
+    "description": "범위 안의 적에게 4초간 화상 피해를 줍니다.",
+    "aimType": "ground_point",
+    "damage": 180,
+    "damageType": "magic",
+    "range": 1500,
+    "color": "#ff9b5e",
+    "effects": [
+      {
+        "kind": "dot",
+        "duration": 4,
+        "magnitude": 60
+      }
+    ],
+    "radius": 260
+  },
+  {
+    "id": "piercing_shot",
+    "name": "관통 사격",
+    "description": "관통 화살로 적을 2초 침묵시킵니다.",
+    "aimType": "direction",
+    "damage": 450,
+    "damageType": "physical",
+    "range": 1500,
+    "color": "#bfdf9f",
+    "effects": [
+      {
+        "kind": "silence",
+        "duration": 2,
+        "magnitude": 0
+      }
+    ],
+    "width": 80
+  },
+  {
+    "id": "sanctuary",
+    "name": "빛의 안식처",
+    "description": "아군 하나를 700 회복하고 6초간 400 보호막.",
+    "aimType": "target_ally",
+    "damage": 0,
+    "damageType": "magic",
+    "range": 1500,
+    "color": "#ffe3a0",
+    "effects": [
+      {
+        "kind": "shield",
+        "duration": 6,
+        "magnitude": 400
+      }
+    ],
+    "heal": 700
+  },
+  {
+    "id": "swamp_hex",
+    "name": "늪의 저주",
+    "description": "전체 마법 피해 / 방어력 감소",
+    "aimType": "none",
+    "damage": 150,
+    "damageType": "magic",
+    "range": 5760,
+    "color": "#c991e7",
+    "effects": [
+      {
+        "kind": "def_down",
+        "duration": 5,
+        "magnitude": 0.2
+      }
+    ]
+  },
+  {
+    "id": "brutal_sweep",
+    "name": "파괴의 휩쓸기",
+    "description": "전방 강타 / 밀쳐내기",
+    "aimType": "direction",
+    "damage": 400,
+    "damageType": "physical",
+    "range": 600,
+    "color": "#ef9275",
+    "effects": [
+      {
+        "kind": "knockback",
+        "duration": 0.3,
+        "magnitude": 200
+      }
+    ],
+    "width": 500
+  },
+  {
+    "id": "rally",
+    "name": "전장의 노래",
+    "description": "아군 전체 공격력 증가",
+    "aimType": "none",
+    "damage": 0,
+    "damageType": "magic",
+    "range": 5760,
+    "color": "#ffe3a0",
+    "effects": [
+      {
+        "kind": "atk_up",
+        "duration": 5,
+        "magnitude": 0.25
+      }
+    ]
+  }
+]

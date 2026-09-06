@@ -1,0 +1,446 @@
+[
+  {
+    "id": 1,
+    "name": "늪지의 문턱",
+    "subtitle": "GOBLIN MARSH",
+    "waves": [
+      {
+        "spawns": [
+          {
+            "enemyId": "grunt",
+            "count": 3,
+            "levelScale": 1.0
+          }
+        ]
+      },
+      {
+        "spawns": [
+          {
+            "enemyId": "grunt",
+            "count": 4,
+            "levelScale": 1.0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "name": "이끼 낀 오솔길",
+    "subtitle": "GOBLIN MARSH",
+    "waves": [
+      {
+        "spawns": [
+          {
+            "enemyId": "grunt",
+            "count": 3,
+            "levelScale": 1.133
+          },
+          {
+            "enemyId": "slinger",
+            "count": 1,
+            "levelScale": 1.133
+          }
+        ]
+      },
+      {
+        "spawns": [
+          {
+            "enemyId": "grunt",
+            "count": 4,
+            "levelScale": 1.133
+          },
+          {
+            "enemyId": "slinger",
+            "count": 1,
+            "levelScale": 1.133
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "name": "고블린 전초기지",
+    "subtitle": "GOBLIN MARSH",
+    "waves": [
+      {
+        "spawns": [
+          {
+            "enemyId": "grunt",
+            "count": 3,
+            "levelScale": 1.267
+          },
+          {
+            "enemyId": "slinger",
+            "count": 2,
+            "levelScale": 1.267
+          }
+        ]
+      },
+      {
+        "spawns": [
+          {
+            "enemyId": "grunt",
+            "count": 4,
+            "levelScale": 1.267
+          },
+          {
+            "enemyId": "slinger",
+            "count": 2,
+            "levelScale": 1.267
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "name": "속삭이는 수렁",
+    "subtitle": "GOBLIN MARSH",
+    "waves": [
+      {
+        "spawns": [
+          {
+            "enemyId": "grunt",
+            "count": 4,
+            "levelScale": 1.4
+          },
+          {
+            "enemyId": "slinger",
+            "count": 2,
+            "levelScale": 1.4
+          }
+        ]
+      },
+      {
+        "spawns": [
+          {
+            "enemyId": "shaman",
+            "count": 1,
+            "levelScale": 1.4
+          },
+          {
+            "enemyId": "grunt",
+            "count": 3,
+            "levelScale": 1.4
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "name": "오우거의 영역",
+    "subtitle": "GOBLIN MARSH",
+    "waves": [
+      {
+        "spawns": [
+          {
+            "enemyId": "grunt",
+            "count": 4,
+            "levelScale": 1.533
+          },
+          {
+            "enemyId": "slinger",
+            "count": 2,
+            "levelScale": 1.533
+          }
+        ]
+      },
+      {
+        "spawns": [
+          {
+            "enemyId": "shaman",
+            "count": 1,
+            "levelScale": 1.533
+          },
+          {
+            "enemyId": "grunt",
+            "count": 3,
+            "levelScale": 1.533
+          }
+        ]
+      },
+      {
+        "spawns": [
+          {
+            "enemyId": "brute",
+            "count": 1,
+            "levelScale": 1.533
+          },
+          {
+            "enemyId": "grunt",
+            "count": 2,
+            "levelScale": 1.533
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "name": "침수된 유적",
+    "subtitle": "GOBLIN MARSH",
+    "waves": [
+      {
+        "spawns": [
+          {
+            "enemyId": "grunt",
+            "count": 4,
+            "levelScale": 1.667
+          },
+          {
+            "enemyId": "slinger",
+            "count": 2,
+            "levelScale": 1.667
+          }
+        ]
+      },
+      {
+        "spawns": [
+          {
+            "enemyId": "shaman",
+            "count": 1,
+            "levelScale": 1.667
+          },
+          {
+            "enemyId": "grunt",
+            "count": 4,
+            "levelScale": 1.667
+          }
+        ]
+      },
+      {
+        "spawns": [
+          {
+            "enemyId": "brute",
+            "count": 1,
+            "levelScale": 1.667
+          },
+          {
+            "enemyId": "slinger",
+            "count": 2,
+            "levelScale": 1.667
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "name": "주술사의 제단",
+    "subtitle": "GOBLIN MARSH",
+    "waves": [
+      {
+        "spawns": [
+          {
+            "enemyId": "grunt",
+            "count": 5,
+            "levelScale": 1.8
+          },
+          {
+            "enemyId": "slinger",
+            "count": 2,
+            "levelScale": 1.8
+          }
+        ]
+      },
+      {
+        "spawns": [
+          {
+            "enemyId": "shaman",
+            "count": 1,
+            "levelScale": 1.8
+          },
+          {
+            "enemyId": "grunt",
+            "count": 4,
+            "levelScale": 1.8
+          },
+          {
+            "enemyId": "slinger",
+            "count": 1,
+            "levelScale": 1.8
+          }
+        ]
+      },
+      {
+        "spawns": [
+          {
+            "enemyId": "brute",
+            "count": 1,
+            "levelScale": 1.8
+          },
+          {
+            "enemyId": "shaman",
+            "count": 1,
+            "levelScale": 1.8
+          },
+          {
+            "enemyId": "grunt",
+            "count": 2,
+            "levelScale": 1.8
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "name": "안개 속 매복",
+    "subtitle": "GOBLIN MARSH",
+    "waves": [
+      {
+        "spawns": [
+          {
+            "enemyId": "grunt",
+            "count": 5,
+            "levelScale": 1.933
+          },
+          {
+            "enemyId": "slinger",
+            "count": 3,
+            "levelScale": 1.933
+          }
+        ]
+      },
+      {
+        "spawns": [
+          {
+            "enemyId": "shaman",
+            "count": 2,
+            "levelScale": 1.933
+          },
+          {
+            "enemyId": "grunt",
+            "count": 3,
+            "levelScale": 1.933
+          }
+        ]
+      },
+      {
+        "spawns": [
+          {
+            "enemyId": "brute",
+            "count": 1,
+            "levelScale": 1.933
+          },
+          {
+            "enemyId": "shaman",
+            "count": 1,
+            "levelScale": 1.933
+          },
+          {
+            "enemyId": "grunt",
+            "count": 3,
+            "levelScale": 1.933
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "name": "무너진 왕국",
+    "subtitle": "GOBLIN MARSH",
+    "waves": [
+      {
+        "spawns": [
+          {
+            "enemyId": "grunt",
+            "count": 5,
+            "levelScale": 2.067
+          },
+          {
+            "enemyId": "slinger",
+            "count": 3,
+            "levelScale": 2.067
+          }
+        ]
+      },
+      {
+        "spawns": [
+          {
+            "enemyId": "shaman",
+            "count": 2,
+            "levelScale": 2.067
+          },
+          {
+            "enemyId": "grunt",
+            "count": 4,
+            "levelScale": 2.067
+          }
+        ]
+      },
+      {
+        "spawns": [
+          {
+            "enemyId": "brute",
+            "count": 2,
+            "levelScale": 2.067
+          },
+          {
+            "enemyId": "grunt",
+            "count": 1,
+            "levelScale": 2.067
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 10,
+    "name": "늪의 심장",
+    "subtitle": "GOBLIN MARSH",
+    "waves": [
+      {
+        "spawns": [
+          {
+            "enemyId": "grunt",
+            "count": 5,
+            "levelScale": 2.2
+          },
+          {
+            "enemyId": "slinger",
+            "count": 3,
+            "levelScale": 2.2
+          }
+        ]
+      },
+      {
+        "spawns": [
+          {
+            "enemyId": "shaman",
+            "count": 2,
+            "levelScale": 2.2
+          },
+          {
+            "enemyId": "grunt",
+            "count": 4,
+            "levelScale": 2.2
+          },
+          {
+            "enemyId": "slinger",
+            "count": 2,
+            "levelScale": 2.2
+          }
+        ]
+      },
+      {
+        "spawns": [
+          {
+            "enemyId": "brute",
+            "count": 2,
+            "levelScale": 2.2
+          },
+          {
+            "enemyId": "shaman",
+            "count": 1,
+            "levelScale": 2.2
+          }
+        ]
+      }
+    ]
+  }
+]
