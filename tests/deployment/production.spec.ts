@@ -1,0 +1,20 @@
+import {test,expect} from '@playwright/test';
+import {readFileSync,writeFileSync} from 'node:fs';
+test('deployed build matches local build and plays offline after installation',async({page,context})=>{
+  const entry=readFileSync('dist/index.html','utf8').match(/assets\/index-[^" ]+\.js/)![0];
+  const cacheVersion=readFileSync('dist/sw.js','utf8').match(/const VERSION = "([^"]+)"/)![1];
+  await expect.poll(async()=>{const response=await page.request.get(`./?check=${Date.now()}`),sw=await page.request.get(`./sw.js?check=${Date.now()}`);return(await response.text()).includes(entry)&&(await sw.text()).includes(cacheVersion);},{timeout:120000,intervals:[4000,7000,10000]}).toBe(true);
+  const errors:string[]=[];page.on('pageerror',e=>errors.push(e.message));
+  await page.goto('./');await page.waitForFunction(()=>(window as any).heroRush?.getState().scene==='StageSelect');
+  await page.evaluate(async()=>{await navigator.serviceWorker.ready;});
+  await page.waitForFunction(()=>!!navigator.serviceWorker.controller);
+  expect(await page.evaluate(()=>caches.keys())).toContain(cacheVersion);
+  await page.screenshot({path:'tests/screenshots/deployed.png'});
+  await context.setOffline(true);await page.reload();await page.waitForFunction(()=>(window as any).heroRush?.getState().scene==='StageSelect');
+  await page.mouse.click(1043,650);await page.waitForFunction(()=>(window as any).heroRush?.getState().scene==='Battle');
+  await page.mouse.click(930,43);await page.mouse.click(1023,43);
+  await page.waitForFunction(()=>(window as any).heroRush?.getState().scene==='Result');
+  const result=await page.evaluate(()=>(window as any).heroRush.getState().result);expect(result.victory).toBe(true);expect(errors).toEqual([]);
+  writeFileSync('tests/deployment-report.json',JSON.stringify({url:'https://silverylaker-cmyk.github.io/hero-rush/',entry,cacheVersion,offlineVictory:result.victory,stars:result.stars,pageErrors:errors},null,2)+'\n');
+  await context.setOffline(false);
+});

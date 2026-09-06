@@ -1,0 +1,10 @@
+{
+  "browser": "Chrome desktop headless",
+  "viewport": "1280x720",
+  "initialUnits": 20,
+  "cpuThrottle": 6,
+  "fps": 45.196893649692214,
+  "frames": 181,
+  "duration": 4004.700000023842,
+  "physicalPhoneVerified": false
+}
