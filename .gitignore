@@ -6,3 +6,4 @@ playwright-report/
 raw/
 .env*
 !\.env.example
+tests/art-*-contact.jpg
